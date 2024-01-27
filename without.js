@@ -27,7 +27,7 @@ function without(source, itemsToRemove) {
     if (!itemsToRemove.includes(source[i])) {
       itemsRemoved.push(source[i]);
     }
-  } console.log(itemsRemoved);
+  } return itemsRemoved;
 }
 
 
