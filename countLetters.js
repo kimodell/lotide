@@ -28,3 +28,7 @@ console.log(countLetters("gg wp noob"));
 const result = countLetters("lighthouse in the house");
 assertEqual(result['l'], 1);
 assertEqual(result['i'], 2);
+
+const result2 = countLetters("LHL");
+assertEqual(result2['L'], 2);
+assertEqual(result2['H'], 1);
