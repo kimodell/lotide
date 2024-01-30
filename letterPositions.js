@@ -26,7 +26,7 @@ const letterPositions = function(sentence) {
   for (let i = 0; i < sentence.length; i++) {
     let currentChar = sentence[i];
 
-    if (i !== ' ') {
+    if (currentChar !== ' ') {
       if (results[currentChar]) {
         results[currentChar].push(i);
       } else {
