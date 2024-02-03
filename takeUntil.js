@@ -1,7 +1,7 @@
 const takeUntil = function(array, callback) {  //the callback will be the condition when we need to stop the loop
   const results = [];
   for (item of array) {
-    if (callback(item) === false) {  //if the item, when compared to the callback, returns false we cane push it!
+    if (!callback(item)) {  //if the item, when compared to the callback, returns false we cane push it!
       results.push(item);
     } else { //but we need to stop the loop as soon as the callback returns true for the item!
       break;
