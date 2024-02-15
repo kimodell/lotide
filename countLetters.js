@@ -32,3 +32,5 @@ assertEqual(result['i'], 2);
 const result2 = countLetters("LHL");
 assertEqual(result2['L'], 2);
 assertEqual(result2['H'], 1);
+
+module.exports = countLetters;

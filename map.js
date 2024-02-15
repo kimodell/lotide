@@ -45,3 +45,5 @@ testCases.forEach((test, index) => {
   const results = map(test.words, word => word[0]);
   assertArraysEqual(results, test.expected);
 });
+
+module.exports = map;
