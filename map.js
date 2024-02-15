@@ -46,4 +46,3 @@ testCases.forEach((test, index) => {
   assertArraysEqual(results, test.expected);
 });
 
-module.exports = map;
