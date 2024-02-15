@@ -12,20 +12,26 @@ const letterPositions = require('./letterPositions')
 const map = require('./map')
 const takeUntil = require('./takeUntil')
 const without = require('./without')
+const assertArraysEqual = require('./assertArraysEqual')
+const assertEqual = require('./assertEqual')
+const assertObjectsEqual = require('./assertObjectsEqual')
 
 module.exports = {
   head:   head,
   tail:    tail,
-  middle: middle
-  countLetters: countLetters
-  countOnly: countOnly
-  eqArrays: eqArrays
-  eqObjects: eqObjects
-  findKey: findKey
-  findKeyByValue: findKeyByValue
-  flatten: flatten
-  letterPositions: letterPositions
-  map: map
-  takeUntil: takeUntil
-  without: without
+  middle: middle,
+  countLetters: countLetters,
+  countOnly: countOnly,
+  eqArrays: eqArrays,
+  eqObjects: eqObjects,
+  findKey: findKey,
+  findKeyByValue: findKeyByValue,
+  flatten: flatten,
+  letterPositions: letterPositions,
+  map: map,
+  takeUntil: takeUntil,
+  without: without,
+  assertArraysEqual: assertArraysEqual,
+  assertEqual: assertEqual,
+  assertObjectsEqual: assertObjectsEqual,
 };
