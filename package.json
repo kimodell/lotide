@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@kimodell/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "Lotide is a mini clone of the [Lodash](https://lodash.com) library. Lotide is used for educational purposes and has been published as a project for Lighthouse Labs",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/kimodell/lotide.git"
   },
-  "author": "",
+  "author": "Kim O'Dell",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kimodell/lotide/issues"
