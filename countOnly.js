@@ -6,19 +6,23 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+//function takes an array and an object as args, returns object w/ a count of the array elements if they were also in the object as "true"
 const countOnly = function (allItems, itemsToCount) {
+  //declare the empty object
   const results = {};
 
   for (const item of allItems) {
+    //if the item of the allItems array is also in the itemsToCount object...
     if (itemsToCount[item]) { 
+      //if the item is already in the results object, add 1 to the value of the item/key
       if (results[item]) {
         results[item] += 1;
+        //else, if the item is not in the results obect, add it as a key with a value of 1
       } else {
         results[item] = 1;
       }
     }
   }
-
   return results;
 };
 

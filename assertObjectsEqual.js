@@ -31,11 +31,14 @@ const eqObjects = function(object1, object2) {
   return true; //if the above conditions do not return false, return true
 };
 
+////function passes two objects as args one is the actual result, other is the expected result (actual,expected)
 const assertObjectsEqual = function(object1, object2) {
   const inspect = require(`util`).inspect;
   const objectsAreEqual = eqObjects(object1, object2);
+  //if both objects match, function returns true and passes! Pass message prints to console
   if (objectsAreEqual) {
     console.log(`❤️❤️❤️Assertion Passed: ${inspect(object1)} === ${inspect(object2)}`);
+    //else they do not match and function prints failiure message to console
   } else {
     console.log(`😒😒😒Assertion Failed: ${inspect(object1)} !== ${inspect(object2)}`);
   }

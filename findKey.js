@@ -7,14 +7,17 @@ const assertEqual = function(actual, expected) {
 };
 
 //return the first key that returns true with the callback
-
+//create a function that takes an onject and a callback
 const findKey = function(object, callback) {
-
+  //for each key in the object
   for (const key in object) {
+    //subject that key's value to the callback. In this case, the value mst exactly macth the number of stars
     if (callback(object[key])) {
+      //if the value, when subjected to the callback, returns true(in this case, when the start === 2), return the key!
       return key;
     }
   }
+  //end after the first key is returned because we only want the first key
 };
 
 const result = findKey({
