@@ -1,9 +1,14 @@
+//a function that takes an array and a callback and returns a new array containing the result of the callback function on each element of the array.
+
 const map = function (array, callback) {
+  //define your emtpy new array
   const results = [];
+  //for each item of the original array
   for (let item of array) {
     /*console.log('item BEFORE: ', item);
     console.log('item AFTER: ', callback(item));
     console.log('---');*/
+    //push the item, after being subject to the callback, to the new array
     results.push(callback(item));
   }
   return results;
